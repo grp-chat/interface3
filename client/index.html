@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Task Master</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Tutorial 1 - Completing Tasks</h1>
+            <ul>
+                <!-- <li class="current"><a href="index.html">Tournament Board</a></li> -->
+                <!-- <li class="current">Tournament Board</li> -->
+                <!-- <li><a class="link" href="points.html" target="_blank">Points</a></li> -->
+                <!-- <li><a href="reference.html" target="_blank">Reference</a></li> -->
+            </ul>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="board">
+            <a id="P1" href="#">
+                <span></span>
+                <span></span>
+                LOK
+            </a>
+            <br>
+            <a id="P2" href="#">
+                <span></span>
+                <span></span>
+                TJY
+            </a>
+            <br>
+            <a id="P3" href="#">
+                <span></span>
+                <span></span>
+                CJH
+            </a>
+            <br>
+            <a id="P4" href="#">
+                <span></span>
+                <span></span>
+                CED
+            </a>
+            <br>
+            <a id="P5" href="#">
+                <span></span>
+                <span></span>
+                KX
+            </a>
+            <br>
+            <a id="P6" href="#">
+                <span></span>
+                <span></span>
+                KN
+            </a>
+            <br>
+            <a id="P7" href="#">
+                <span></span>
+                <span></span>
+                JT
+            </a>
+            <br>
+            <a id="P8" href="#">
+                <span></span>
+                <span></span>
+                KSY
+            </a>
+            <br>
+            <a id="P9" href="#">
+                <span></span>
+                <span></span>
+                LSH
+            </a>
+            
+
+
+            
+
+        </div>
+        <div id="tasks" class="power-options">
+            
+            <div id="1" class="tag" style="--clr:#ff6700;">
+                <div class="icon">R-Fire</div>
+                <div class="tagid">Id: 1</div>
+                <div class="text">
+                    <div class="desc1">Description</div> 
+                    <p>desc 2</p>
+                </div>
+                <div class="reward">+1 Pts</div>
+            </div>
+            
+        </div>
+
+        <div class="3rdcol">
+            <div class="points">
+                <div>Team Score</div>
+                <div id="teamA">Team A: 0</div>
+                <div>(LOK, CJH, CED)</div>
+                <div id="teamB">Team B: 0</div>
+                <div>(TJY, KX, KN, JT)</div>
+            </div>
+            
+            <div id="chat" class="chat"></div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

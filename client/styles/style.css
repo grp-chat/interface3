@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Luckiest Guy';
+    background-color: #333333;
+    /* background-color: #e6e6ea; */
+
+}
+
+a {
+    color: #2196f3;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    /* letter-spacing: 2px; */
+    margin: 0;
+    padding: 10px 60px; 
+    overflow: hidden;
+    position: relative;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    transition: 0.4s;
+}   
+
+a.active {
+    color: #fff;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3, 0 0 50px #2196f3;
+    transition-delay: 0.4s;
+}
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1) {
+    top: 0;
+    left: -110%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+}
+
+a span:nth-child(2) {
+    bottom: 0;
+    right: -110%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+}
+
+a.active span:nth-child(1) {
+    left:100%;
+    transition: 1s;
+}
+
+a.active span:nth-child(2) {
+    right:100%;
+    transition: 1s;
+}
+
+.container{
+    padding: 20px;
+    overflow: hidden;
+    /* background-color: #fe4a49; */
+    background-color: #152238;
+}
+
+.container h1{
+    float: left;
+    margin-left: 5%;
+    margin-top: 0;
+    color: white;
+}
+
+.container ul{
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 70%;
+
+}
+
+.container li{
+    margin-top: 10px;
+    float: left;
+    padding: 0 20px 0 20px; 
+}
+
+.container a{
+    text-decoration: none;
+    color: white;
+}
+
+.current a::after{
+    content: '_';
+    background-color: white;
+    font-size: 4px;
+    display: block;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 15% 55% 30%;
+}
+
+.board{
+    white-space: nowrap;
+    font-size: 50px;
+    /* background-color: #031322; */
+    background-color: #152238;
+    border: 3px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 560px;
+    /* width: 1000px; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* #columndiv {
+    display: inline-block;
+} */
+
+.board h1{
+    display: inline;
+    padding: 10px;
+}
+
+.power-options{
+    font-size: 27px;
+    margin-right: 10px;
+    height: 550px;
+    overflow-y: auto;
+}
+
+.tag {
+    cursor: pointer;
+    color: white;
+    background-color: #222222;
+    border-radius: 3px;
+    margin-top: 8px;
+    /* padding-top: 30px; */
+    text-align: center;
+    width: 98%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    border: 1px solid white;
+    box-shadow: inset 100px 0 0 0.09px var(--clr);
+    transition: ease-out 0.4s;
+    outline: none;
+}
+
+/* .tag::before {
+    content: '';
+    position: relative;
+    width: 10px;
+    height: 80px;
+    background: var(--clr);
+    transition: 0.5s ease-in-out;
+} */
+
+.tag.active {
+    box-shadow: inset 680px 0 0 0 var(--clr);
+}
+.tag:hover {
+    transform: translateX(10px);
+}
+
+.icon {
+    position: relative;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    position: relative;
+    min-width: 300px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+}
+.reward {
+    position: relative;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 17px;
+}
+.tagid {
+    position: relative;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.points {
+    width: 375px;
+    height: 200px;
+    border: 1px solid black;
+    color: wheat;
+    font-size: 20px;
+}
+
+.chat {
+    width: 375px;
+    height: 320px;
+    border: 1px solid black;
+    color: wheat;
+}
